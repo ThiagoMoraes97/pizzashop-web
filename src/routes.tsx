@@ -5,6 +5,7 @@ import { AuthLayout } from './pages/_layouts/auth'
 import { Dashboard } from './pages/app/dashboard'
 import { SignIn } from './pages/auth/sign-in'
 import { SignUp } from './pages/auth/sing-up'
+import { Orders } from './pages/app/orders/orders'
 
 export function Router() {
   return (
@@ -12,6 +13,7 @@ export function Router() {
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/orders" element={<Orders />} />
         </Route>
 
         <Route path="/" element={<AuthLayout />}>
